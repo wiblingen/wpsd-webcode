@@ -50,7 +50,7 @@ if ($_SERVER["PHP_SELF"] == "/admin/update.php") {
     }
     system('sudo touch /var/log/pi-star/WPSD-update.log > /dev/null 2>&1 &');
     system('sudo echo "" > /var/log/pi-star/WPSD-update.log > /dev/null 2>&1 &');
-    system('sudo /usr/local/sbin/wpsd-update > /dev/null 2>&1 &');
+    system('sudo /usr/local/sbin/pistar-update > /dev/null 2>&1 &');
   }
 
   // Sanity Check Passed.
